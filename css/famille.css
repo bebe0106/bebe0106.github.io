@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #FAF0CA;
+}
+
+.container {
+    height: 100vh;
+    top: 10%;
+}
+
+.titre {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    color: #0D3B66;
+    font-size: 500%;
+    font-family: 'Kurale', serif;
+    text-decoration: none;
+}
+
+.shemas {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 70vh;
+}
+
+.lines {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+}
+
+.colette {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
+.julien {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+}
+
+.laurent {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
+.benoit {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+}
+
+.left {
+    position: absolute;
+    height: 100%;
+    width: 41%;
+}
+
+.center {
+    position: absolute;
+    height: 100%;
+    width: 18%;
+    left: 41%;
+}
+
+.right {
+    position: absolute;
+    height: 100%;
+    width: 41%;
+    left: 59%;
+}
+
+
+/* Circle */
+
+.circle#l2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #0D3B66;
+    border-radius: 50%;
+    top: calc(70% - 50px);
+    left: calc(100% - 80px);
+}
+
+
+/* Photo */
+
+.papa_img {
+    position: absolute;
+    top: calc(30% - 37px);
+    right: calc(100% - 120px);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.maman_img {
+    position: absolute;
+    top: calc(30% - 37px);
+    left: calc(100% - 120px);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.benoit_img {
+    position: absolute;
+    top: calc(70% - 50px);
+    right: calc(100% - 100px);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.julien_img {
+    position: absolute;
+    top: calc(70% - 50px);
+    left: calc(100% - 100px);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+
+/* Noms */
+
+.nom#noml1 {
+    position: absolute;
+    color: #6A8D92;
+    font-size: 300%;
+    font-family: 'Kurale', serif;
+    text-decoration: none;
+    top: calc(30% - 30px);
+    left: calc(100% - 300px);
+    transition: ease 0.5s;
+}
+
+.nom#noml2 {
+    position: absolute;
+    color: #6A8D92;
+    font-size: 300%;
+    font-family: 'Kurale', serif;
+    text-decoration: none;
+    top: calc(70% - 40px);
+    left: calc(100% - 240px);
+    transition: ease 0.5s;
+}
+
+.nom#nomr1 {
+    position: absolute;
+    color: #6A8D92;
+    font-size: 300%;
+    font-family: 'Kurale', serif;
+    text-decoration: none;
+    top: calc(30% - 30px);
+    right: calc(100% - 315px);
+    transition: ease 0.5s;
+}
+
+.nom#nomr2 {
+    position: absolute;
+    color: #6A8D92;
+    font-size: 300%;
+    font-family: 'Kurale', serif;
+    text-decoration: none;
+    top: calc(70% - 40px);
+    right: calc(100% - 260px);
+    transition: ease 0.5s;
+}
+
+
+/* Texts */
+
+.text#textl1 {
+    position: absolute;
+    font-family: 'Kurale', serif;
+    color: #0D3B66;
+    text-align: center;
+    opacity: 0;
+    width: calc(100% - 250px);
+    left: 9%;
+    top: calc(50% - 30px);
+    transition: 0.5s;
+}
+
+.text#textl2 {
+    position: absolute;
+    font-family: 'Kurale', serif;
+    color: #0D3B66;
+    text-align: center;
+    opacity: 0;
+    width: calc(100% - 250px);
+    left: 9%;
+    top: calc(70% - 30px);
+    transition: 0.5s;
+}
+
+.text#textr1 {
+    position: absolute;
+    font-family: 'Kurale', serif;
+    color: #0D3B66;
+    text-align: center;
+    opacity: 0;
+    width: calc(100% - 250px);
+    right: 9%;
+    top: calc(50% - 30px);
+    transition: 0.5s;
+}
+
+.text#textr2 {
+    position: absolute;
+    font-family: 'Kurale', serif;
+    color: #0D3B66;
+    text-align: center;
+    opacity: 0;
+    width: calc(100% - 250px);
+    right: 9%;
+    top: calc(70% - 30px);
+    transition: 0.5s;
+}
+
+
+/* Transition Maman */
+
+.colette:hover div#textl1 {
+    opacity: 1;
+}
+
+.colette:hover div#noml1 {
+    top: calc(10% - 30px);
+    left: 30%;
+    color: #0D3B66;
+}
+
+.colette:hover img {
+    transform: translate(-50px, -50px);
+    width: 150px;
+    height: 150px;
+}
+
+
+/*Transition papa */
+
+.laurent:hover div#textr1 {
+    opacity: 1;
+}
+
+.laurent:hover div#nomr1 {
+    top: calc(10% - 30px);
+    right: 30%;
+    color: #0D3B66;
+}
+
+.laurent:hover img {
+    transform: translate(+50px, -50px);
+    width: 150px;
+    height: 150px;
+}
+
+
+/* Transition bebe*/
+
+.benoit:hover div#textr2 {
+    opacity: 1;
+}
+
+.benoit:hover div#nomr2 {
+    top: calc(40% - 40px);
+    right: 30%;
+    color: #0D3B66;
+}
+
+.benoit:hover img {
+    transform: translate(+50px, -50px);
+    width: 150px;
+    height: 150px;
+}
+
+
+/* Transition juju */
+
+.julien:hover div#textl2 {
+    opacity: 1;
+}
+
+.julien:hover div#noml2 {
+    top: calc(40% - 30px);
+    left: 30%;
+    color: #0D3B66;
+}
+
+.julien:hover img {
+    transform: translate(-50px, -50px);
+    width: 150px;
+    height: 150px;
+}

@@ -1,0 +1,133 @@
+html {
+    background-color: #0D3B66;
+}
+
+.title a {
+    color: #FAF0CA;
+}
+
+nav.topnav ul li a {
+    color: #FAF0CA;
+}
+
+nav.topnav ul li a:after {
+    background: #FAF0CA;
+}
+
+div.container {
+    height: 6000px;
+}
+
+.frise {
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    top: 200px;
+}
+
+.line {
+    position: absolute;
+    width: 7px;
+    height: 100%;
+    background-color: #6A8D92;
+    left: calc(50% - 3.5px);
+    top: 50px;
+}
+
+.event {
+    margin-bottom: 100px;
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: calc(50% - 15px);
+    top: calc(50% - 15px);
+    background-color: #6A8D92;
+}
+
+.anneeL {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    right: calc(58% + 15px);
+    top: 0%;
+    color: #6A8D92;
+    font-size: 250%;
+    font-family: 'Kurale', serif;
+    text-align: right;
+    text-decoration: none;
+}
+
+.anneeR {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: calc(58% + 15px);
+    top: 0%;
+    color: #6A8D92;
+    font-size: 250%;
+    font-family: 'Kurale', serif;
+    text-align: left;
+    text-decoration: none;
+}
+
+.jourL {
+    position: absolute;
+    width: 40%;
+    height: fit-content;
+    right: calc(58% + 30px);
+    top: 60%;
+    color: #6A8D92;
+    font-size: 120%;
+    font-family: 'Kurale', serif;
+    text-align: right;
+    text-decoration: none;
+}
+
+.jourR {
+    position: absolute;
+    width: 40%;
+    height: fit-content;
+    left: calc(58% + 15px);
+    top: 60%;
+    color: #6A8D92;
+    font-size: 120%;
+    font-family: 'Kurale', serif;
+    text-align: left;
+    text-decoration: none;
+}
+
+.descriptionR {
+    position: absolute;
+    width: 40%;
+    height: fit-content;
+    max-width: 40%;
+    left: calc(55% + 15px);
+    /* top: calc(25% - 15px); */
+    top: ;
+    color: #6A8D92;
+    font-size: 250%;
+    font-family: 'Kurale', serif;
+    text-align: left;
+    text-decoration: none;
+}
+
+.descriptionL {
+    position: absolute;
+    width: 40%;
+    height: fit-content;
+    max-width: 40%;
+    right: calc(55% + 15px);
+    top: auto;
+    color: #6A8D92;
+    font-size: 250%;
+    font-family: 'Kurale', serif;
+    text-align: right;
+    text-decoration: none;
+}
