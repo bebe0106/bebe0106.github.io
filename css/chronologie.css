@@ -4,6 +4,37 @@ html {
 
 .title a {
     color: #FAF0CA;
+    z-index: 3;
+}
+
+.title {
+    z-index: 3;
+}
+
+nav.topnav {
+    position: sticky;
+    background-color: #0D3B66;
+    z-index: 3;
+    height: 100px;
+    top: 0px;
+}
+
+.flouTop {
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    top: 100px;
+    background-image: linear-gradient(to bottom, rgb(13, 59, 102, 1), rgb(13, 59, 102, 0));
+    z-index: 2;
+}
+
+.flouBottom {
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    height: 130px;
+    background-image: linear-gradient(to top, rgb(13, 59, 102, 1), rgb(13, 59, 102, 0));
+    z-index: 2;
 }
 
 nav.topnav ul li a {
@@ -16,12 +47,13 @@ nav.topnav ul li a:after {
 
 div.container {
     height: 6000px;
+    z-index: 1;
 }
 
 .frise {
     position: absolute;
     width: 100%;
-    height: 85%;
+    height: 5000px;
     top: 200px;
 }
 
@@ -110,7 +142,7 @@ div.container {
     max-width: 40%;
     left: calc(55% + 15px);
     /* top: calc(25% - 15px); */
-    top: ;
+    top: auto;
     color: #6A8D92;
     font-size: 250%;
     font-family: 'Kurale', serif;
