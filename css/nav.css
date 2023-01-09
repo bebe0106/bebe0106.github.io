@@ -24,8 +24,10 @@
 /* The navigation bar */
 
 .topnav {
+    position: sticky;
     width: 100%;
     margin: auto -20px;
+    top: 0px;
     padding: 0px 0;
 }
 
@@ -45,7 +47,7 @@ nav.topnav ul li a {
     text-decoration: none;
     color: #EE964B;
     text-transform: none;
-    margin: 0 10px;
+    margin: 10px;
     font-size: 150%;
     font-family: 'Kurale', serif;
     transition: transform 2s;
