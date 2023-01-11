@@ -1,0 +1,61 @@
+@media (max-width: 800px) {
+    .list
+    {
+        position: absolute;
+        display: none;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .list ul {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 35%;
+        transform: translate(-50%,-50%);
+        align-self: center;
+        text-align: center;
+    }
+
+    .list ul li {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    .list ul li a {
+        font-size: 200%;
+    }
+ 
+    .dropdown
+    {
+        width: 10%;
+        display: flex;
+        font-size: 40px;
+        color: #EE964B;
+        cursor: pointer;
+    }
+ 
+    #my_checkbox:checked  + .list {
+        background-color: #0D3B66;
+        display:block;
+    }
+
+    .title {
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 1;
+        text-align: center;
+    }
+
+
+    .blason {
+        top: 40%;
+        width: 60%;
+    }
+
+    .title a {
+        font-size: 300%;
+    }
+    
+}

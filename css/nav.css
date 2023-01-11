@@ -3,10 +3,11 @@
 .title {
     position: absolute;
     left: 2%;
-    top: 20px;
-    width: 20%;
+    top: 2%;
+    width: 40%;
     transition: transform .2s;
-    z-index: 2;
+    z-index: 3;
+    text-align: left;
 }
 
 .title a {
@@ -16,50 +17,43 @@
     text-decoration: none;
 }
 
-.title:hover {
-    transform: scale(1.1);
-}
-
-
 /* The navigation bar */
 
 .topnav {
-    position: sticky;
-    width: 100%;
-    margin: auto -20px;
-    top: 0px;
-    padding: 0px 0;
+    width: 100%
 }
 
-nav.topnav ul {
+.list ul {
     list-style: none;
     text-align: right;
+    justify-content: center;
+
 }
 
-nav.topnav ul li {
+.list ul li {
     display: inline-block;
 }
 
-nav.topnav ul li a {
+.list ul li a {
     position: relative;
     display: block;
     padding: 5px;
     text-decoration: none;
     color: #EE964B;
     text-transform: none;
-    margin: 10px;
+    margin: 0 1px;
     font-size: 150%;
     font-family: 'Kurale', serif;
     transition: transform 2s;
 }
 
-nav.topnav ul li a,
-nav.topnav ul li a:after,
-nav.topnav ul li a:before {
+.list ul li a,
+.list ul li a:after,
+.list ul li a:before {
     transition: all .5s;
 }
 
-nav.topnav ul li a:after {
+.list ul li a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -72,6 +66,20 @@ nav.topnav ul li a:after {
     height: 2px;
 }
 
-nav.topnav ul li a:hover:after {
+.list ul li a:hover:after {
     width: 50%;
+}
+
+.dropdown, #my_checkbox
+{
+    display: none;
+    position: absolute;
+    color: #EE964B;
+    text-transform: none;
+    font-size: 150%;
+    transition: transform 2s;
+    font-family: 'Kurale', serif;
+    right: 2%;
+    z-index: 4;
+
 }

@@ -9,17 +9,16 @@ html {
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     text-align: center;
     z-index: -1;
 }
 
 .blason {
     position: absolute;
-    top: 20%;
-    transform: translate(-50%, -50%);
-    max-width: 40%;
-    max-height: 70%;
+    top: 40%;
+    width: 40%;
+    transform: translate(-50%,-50%);
     transition: transform .2s;
 }
 
@@ -30,7 +29,7 @@ html {
 .bg {
     position: absolute;
     width: 100%;
-    top: 500px;
+    bottom: 0%;
     left: 0;
     z-index: -1;
 }
@@ -41,9 +40,3 @@ font-family: 'Italianno', cursive;
 font-family: 'Kurale', serif;
 font-family: 'Tangerine', cursive;
 */
-
-.content {
-    height: 100vh;
-    z-index: 2;
-    background-color: #0D3B66;
-}
