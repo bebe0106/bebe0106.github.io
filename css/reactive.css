@@ -1,8 +1,10 @@
 @media (max-width: 800px) {
+
+
     .list
     {
-        position: absolute;
         display: none;
+        position: absolute;
         height: 100%;
         width: 100%;
         z-index: 3;
@@ -38,8 +40,8 @@
  
     #my_checkbox:checked  + .list {
         background-color: #0D3B66;
-        display:block;
-    }
+        display:block
+    } 
 
     .title {
         left: 50%;
@@ -47,7 +49,6 @@
         z-index: 1;
         text-align: center;
     }
-
 
     .blason {
         top: 40%;

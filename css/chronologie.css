@@ -6,7 +6,7 @@ html {
     color: #FAF0CA
 }
 
-nav.topnav {
+.topnav {
     position: sticky;
     background-color: #0D3B66;
     z-index: 2;
