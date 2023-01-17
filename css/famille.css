@@ -8,35 +8,26 @@ html {
     background-color: #FAF0CA;
 }
 
-.container {
+section {
     height: 100vh;
-    top: 10%;
 }
 
-.titre {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    color: #0D3B66;
-    font-size: 500%;
-    font-family: 'Kurale', serif;
-    text-decoration: none;
+.container {
+    min-height: 90vh;
+    text-align: center;
 }
 
 .shemas {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%);
     width: 100%;
-    height: 70vh;
+    height: 90vh;
 }
 
 .lines {
     position: absolute;
     width: 100%;
     top: 15%;
+    transform: translate(-50%);
 }
 
 .colette {
@@ -101,220 +92,185 @@ html {
 
 /* Photo */
 
-.papa_img {
+.colette_img {
     position: absolute;
-    top: calc(30% - 37px);
-    right: calc(100% - 120px);
+    top: 50%;
+    right: 2%;
+    transform: translate(0,-50%);
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.maman_img {
-    position: absolute;
-    top: calc(30% - 37px);
-    left: calc(100% - 120px);
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.benoit_img {
-    position: absolute;
-    top: calc(70% - 50px);
-    right: calc(100% - 100px);
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 23%;
     transition: 0.5s;
     z-index: 1;
 }
 
 .julien_img {
     position: absolute;
-    top: calc(70% - 50px);
-    left: calc(100% - 100px);
+    top: 50%;
+    right: 2%;
+    transform: translate(0,-50%);
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 23%;
     transition: 0.5s;
     z-index: 1;
 }
 
+.laurent_img {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0,-50%);
+    border-radius: 50%;
+    width: 23%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.benoit_img {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0,-50%);
+    border-radius: 50%;
+    width: 23%;
+    transition: 0.5s;
+    z-index: 1;
+}
 
 /* Noms */
 
-.nom#noml1 {
+.nom {
     position: absolute;
     color: #6A8D92;
-    font-size: 300%;
+    font-size: 500%;
     font-family: 'Kurale', serif;
     text-decoration: none;
-    top: calc(30% - 30px);
-    left: calc(100% - 300px);
     transition: ease 0.5s;
+    transform: translate(-50%,-50%);
 }
 
-.nom#noml2 {
-    position: absolute;
-    color: #6A8D92;
-    font-size: 300%;
-    font-family: 'Kurale', serif;
-    text-decoration: none;
-    top: calc(70% - 40px);
-    left: calc(100% - 240px);
-    transition: ease 0.5s;
+.nom#nom_colette {
+    top: 50%;
+    left: 40%;
 }
 
-.nom#nomr1 {
-    position: absolute;
-    color: #6A8D92;
-    font-size: 300%;
-    font-family: 'Kurale', serif;
-    text-decoration: none;
-    top: calc(30% - 30px);
-    right: calc(100% - 315px);
-    transition: ease 0.5s;
+.nom#nom_julien {
+    top: 50%;
+    left: 40%;
 }
 
-.nom#nomr2 {
-    position: absolute;
-    color: #6A8D92;
-    font-size: 300%;
-    font-family: 'Kurale', serif;
-    text-decoration: none;
-    top: calc(70% - 40px);
-    right: calc(100% - 260px);
-    transition: ease 0.5s;
+.nom#nom_laurent {
+    top: 50%;
+    right: 40%;
+    transform: translate(50%,-50%);
+}
+
+.nom#nom_benoit {
+    top: 50%;
+    right: 40%;
+    transform: translate(50%,-50%);
 }
 
 
 /* Texts */
 
-.text#textl1 {
+.text {
     position: absolute;
     font-family: 'Kurale', serif;
     color: #0D3B66;
     text-align: center;
     opacity: 0;
-    width: calc(100% - 250px);
-    left: 9%;
-    top: calc(50% - 30px);
     transition: 0.5s;
+    top: 50%;
+    width: 60%;
 }
 
-.text#textl2 {
-    position: absolute;
-    font-family: 'Kurale', serif;
-    color: #0D3B66;
-    text-align: center;
-    opacity: 0;
-    width: calc(100% - 250px);
-    left: 9%;
-    top: calc(70% - 30px);
-    transition: 0.5s;
+.text#text_colette {    
+    width: 60%;
+    left: 5%;
 }
 
-.text#textr1 {
-    position: absolute;
-    font-family: 'Kurale', serif;
-    color: #0D3B66;
-    text-align: center;
-    opacity: 0;
-    width: calc(100% - 250px);
-    right: 9%;
-    top: calc(50% - 30px);
-    transition: 0.5s;
+.text#text_julien {
+    left: 5%;
+    top: 50%;
 }
 
-.text#textr2 {
-    position: absolute;
-    font-family: 'Kurale', serif;
-    color: #0D3B66;
-    text-align: center;
-    opacity: 0;
-    width: calc(100% - 250px);
-    right: 9%;
-    top: calc(70% - 30px);
-    transition: 0.5s;
+.text#text_laurent {
+    right: 5%;
+    top: 50%;
+}
+
+.text#text_benoit {
+    right: 5%;
+    top: 50%;
 }
 
 
 /* Transition Maman */
 
-.colette:hover div#textl1 {
+.colette:hover div#text_colette {
     opacity: 1;
 }
 
-.colette:hover div#noml1 {
-    top: calc(10% - 30px);
-    left: 30%;
+.colette:hover div#nom_colette {
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%);
     color: #0D3B66;
 }
 
 .colette:hover img {
-    transform: translate(-50px, -50px);
-    width: 150px;
-    height: 150px;
+    width: 28%;
+}
+
+/* Transition juju */
+
+.julien:hover div#text_julien {
+    opacity: 1;
+}
+
+.julien:hover div#nom_julien {
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%);
+    color: #0D3B66;
+}
+
+.julien:hover img {
+    width: 28%;
 }
 
 
 /*Transition papa */
 
-.laurent:hover div#textr1 {
+.laurent:hover div#text_laurent {
     opacity: 1;
 }
 
-.laurent:hover div#nomr1 {
-    top: calc(10% - 30px);
-    right: 30%;
+.laurent:hover div#nom_laurent {
+    top: 10%;
+    right: 40%;
+    transform: translate(50%);
     color: #0D3B66;
 }
 
 .laurent:hover img {
-    transform: translate(+50px, -50px);
-    width: 150px;
-    height: 150px;
+    width: 28%;
 }
 
 
 /* Transition bebe*/
 
-.benoit:hover div#textr2 {
+.benoit:hover div#text_benoit {
     opacity: 1;
 }
 
-.benoit:hover div#nomr2 {
-    top: calc(40% - 40px);
-    right: 30%;
+.benoit:hover div#nom_benoit {
+    top: 10%;
+    right: 40%;
+    transform: translate(50%);
     color: #0D3B66;
 }
 
 .benoit:hover img {
-    transform: translate(+50px, -50px);
-    width: 150px;
-    height: 150px;
-}
-
-
-/* Transition juju */
-
-.julien:hover div#textl2 {
-    opacity: 1;
-}
-
-.julien:hover div#noml2 {
-    top: calc(40% - 30px);
-    left: 30%;
-    color: #0D3B66;
-}
-
-.julien:hover img {
-    transform: translate(-50px, -50px);
-    width: 150px;
-    height: 150px;
+    width: 28%;
 }
