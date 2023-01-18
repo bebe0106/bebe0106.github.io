@@ -48,7 +48,7 @@ div.container {
 .frise {
     position: absolute;
     width: 100%;
-    height: 5000px;
+    height: 1200px;
     top: 200px;
 }
 
@@ -84,7 +84,7 @@ div.container {
     height: fit-content;
     right: calc(58% + 15px);
     top: 0%;
-    color: #6A8D92;
+    color: #FAF0CA;
     font-size: 250%;
     font-family: 'Kurale', serif;
     text-align: right;
@@ -97,7 +97,7 @@ div.container {
     height: fit-content;
     left: calc(58% + 15px);
     top: 0%;
-    color: #6A8D92;
+    color: #FAF0CA;
     font-size: 250%;
     font-family: 'Kurale', serif;
     text-align: left;
@@ -110,7 +110,7 @@ div.container {
     height: fit-content;
     right: calc(58% + 30px);
     top: 60%;
-    color: #6A8D92;
+    color: #FAF0CA;
     font-size: 120%;
     font-family: 'Kurale', serif;
     text-align: right;
@@ -123,7 +123,7 @@ div.container {
     height: fit-content;
     left: calc(58% + 15px);
     top: 60%;
-    color: #6A8D92;
+    color: #FAF0CA;
     font-size: 120%;
     font-family: 'Kurale', serif;
     text-align: left;
@@ -138,7 +138,7 @@ div.container {
     left: calc(55% + 15px);
     /* top: calc(25% - 15px); */
     top: auto;
-    color: #6A8D92;
+    color: #FAF0CA;
     font-size: 250%;
     font-family: 'Kurale', serif;
     text-align: left;
@@ -152,7 +152,7 @@ div.container {
     max-width: 40%;
     right: calc(55% + 15px);
     top: auto;
-    color: #6A8D92;
+    color: #FAF0CA;
     font-size: 250%;
     font-family: 'Kurale', serif;
     text-align: right;

@@ -8,6 +8,7 @@ html {
     background-color: #FAF0CA;
 }
 
+
 section {
     height: 100vh;
 }
@@ -16,83 +17,107 @@ section {
     min-height: 90vh;
     text-align: center;
 }
-
+/* affichage des differentes parties*/
 .shemas {
-    position: absolute;
     width: 100%;
     height: 90vh;
-}
-
-.lines {
-    position: absolute;
-    width: 100%;
-    top: 25%;
-    transform: translate(-50%);
-}
-
-.colette {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-}
-
-.julien {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    top: 50%;
-}
-
-.laurent {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-}
-
-.benoit {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    top: 50%;
+    display: flex;
+    flex-direction: row;
 }
 
 .left {
-    position: absolute;
+    position: relative;
     height: 100%;
-    width: 41%;
+    width: 41vw;
 }
 
 .center {
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 18%;
-    left: 41%;
 }
 
 .right {
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 41%;
-    left: 59%;
 }
 
 
-/* Circle */
+/* Partie centrale*/
+.lines {
+    width: 100%;
+    top: 25%;
+    transform: translate(0,50%);
+}
 
-.circle#l2 {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: #0D3B66;
-    border-radius: 50%;
-    top: calc(70% - 50px);
-    left: calc(100% - 80px);
+.ligne_verticale {
+    position:absolute;
+    left: 50%;
+    top: 40%;
+    width: 5px;
+    height: 10%;
+    background : #6A8D92;
+}
+
+.ligne_horizontale2 {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    width  : 150%;
+    height : 5px;
+    transform: translate(-50%);
+    background : #6A8D92;
+}
+
+.ligne_verticale_gauche {
+    position:absolute;
+    left: -25%;
+    top: 50%;
+    width: 5px;
+    height: 10%;
+    background : #6A8D92;
+}
+
+.ligne_verticale_droite {
+    position:absolute;
+    left: 125%;
+    top: 50%;
+    width: 5px;
+    height: 10%;
+    background : #6A8D92;
+}
+
+/* block par personne*/
+.left_up {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display:inline-block;
+}
+
+.left_down {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.rigth_up {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.right_down {
+    position: relative;
+    width: 100%;
+    height: 50%;
 }
 
 
 /* Photo */
 
-.colette_img {
+.left_up_img {
     position: absolute;
     top: 50%;
     right: 2%;
@@ -103,7 +128,7 @@ section {
     z-index: 1;
 }
 
-.julien_img {
+.left_down_img {
     position: absolute;
     top: 50%;
     right: 2%;
@@ -114,7 +139,7 @@ section {
     z-index: 1;
 }
 
-.laurent_img {
+.rigth_up_img {
     position: absolute;
     top: 50%;
     left: 2%;
@@ -125,7 +150,7 @@ section {
     z-index: 1;
 }
 
-.benoit_img {
+.right_down_img {
     position: absolute;
     top: 50%;
     left: 2%;
@@ -148,23 +173,23 @@ section {
     transform: translate(-50%,-50%);
 }
 
-.nom#nom_colette {
+.nom#nom_left_up {
     top: 50%;
     left: 40%;
 }
 
-.nom#nom_julien {
+.nom#nom_left_down {
     top: 50%;
     left: 40%;
 }
 
-.nom#nom_laurent {
+.nom#nom_rigth_up {
     top: 50%;
     right: 40%;
     transform: translate(50%,-50%);
 }
 
-.nom#nom_benoit {
+.nom#nom_right_down {
     top: 50%;
     right: 40%;
     transform: translate(50%,-50%);
@@ -184,22 +209,22 @@ section {
     width: 60%;
 }
 
-.text#text_colette {    
+.text#text_left_up {    
     width: 60%;
     left: 5%;
 }
 
-.text#text_julien {
+.text#text_left_down {
     left: 5%;
     top: 50%;
 }
 
-.text#text_laurent {
+.text#text_rigth_up {
     right: 5%;
     top: 50%;
 }
 
-.text#text_benoit {
+.text#text_right_down {
     right: 5%;
     top: 50%;
 }
@@ -207,70 +232,86 @@ section {
 
 /* Transition Maman */
 
-.colette:hover div#text_colette {
+.left_up:hover div#text_left_up {
     opacity: 1;
 }
 
-.colette:hover div#nom_colette {
+.left_up:hover div#nom_left_up {
     top: 10%;
     left: 40%;
     transform: translate(-50%);
     color: #0D3B66;
 }
 
-.colette:hover img {
+.left_up:hover img {
     width: 28%;
 }
 
 /* Transition juju */
 
-.julien:hover div#text_julien {
+.left_down:hover div#text_left_down {
     opacity: 1;
 }
 
-.julien:hover div#nom_julien {
+.left_down:hover div#nom_left_down {
     top: 10%;
     left: 40%;
     transform: translate(-50%);
     color: #0D3B66;
 }
 
-.julien:hover img {
+.left_down:hover img {
     width: 28%;
 }
 
 
 /*Transition papa */
 
-.laurent:hover div#text_laurent {
+.rigth_up:hover div#text_rigth_up {
     opacity: 1;
 }
 
-.laurent:hover div#nom_laurent {
+.rigth_up:hover div#nom_rigth_up {
     top: 10%;
     right: 40%;
     transform: translate(50%);
     color: #0D3B66;
 }
 
-.laurent:hover img {
+.rigth_up:hover img {
     width: 28%;
 }
 
 
 /* Transition bebe*/
 
-.benoit:hover div#text_benoit {
+.right_down:hover div#text_right_down{
     opacity: 1;
 }
 
-.benoit:hover div#nom_benoit {
+.right_down:hover div#nom_right_down {
     top: 10%;
     right: 40%;
     transform: translate(50%);
     color: #0D3B66;
 }
 
-.benoit:hover img {
+.right_down:hover img {
     width: 28%;
+}
+
+@media (max-width: 800px) {
+    .center{
+        display: none;
+    }
+    .shemas {
+        height: 150vh;;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
 }
